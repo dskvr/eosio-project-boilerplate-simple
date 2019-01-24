@@ -120,33 +120,33 @@ This removes all data on the blockchain, including accounts, deployed smart cont
 ```js
 eosio-project-boilerplate-simple // project directory
 └── blockchain
-|   └── contracts // this folder contains the smart contracts
-│   |   └── notechain
-│   │   |   └── notechain.cpp // the main smart contract
-|   └── data // blockchain data, generated after first_time_setup.sh
-|   |   └── blocks
-|   |   ├── config
-|   |   ├── state
-|   |   ├── initialized // to indicate whether the blockchain has been initialized or not
-|   └── scripts // scripts and utilities
-|       └── accounts.json // pre-create account names, public and private keys (for demo only)
-|       ├── continue_blockchain.sh // continue the stopped blockchain
-|       ├── create_accounts.sh // create account data
-|       ├── deploy_contract.sh // deploy contract
-|       └── init_blockchain.sh // script for creating accounts and deploying contract on blockchain
+│   └── contracts // this folder contains the smart contracts
+│   │   └── notechain
+│   │   │   └── notechain.cpp // the main smart contract
+│   └── data // blockchain data, generated after first_time_setup.sh
+│   │   └── blocks
+│   │   ├── config
+│   │   ├── state
+│   │   ├── initialized // to indicate whether the blockchain has been initialized or not
+│   └── scripts // scripts and utilities
+│       └── accounts.json // pre-create account names, public and private keys (for demo only)
+│       ├── continue_blockchain.sh // continue the stopped blockchain
+│       ├── create_accounts.sh // create account data
+│       ├── deploy_contract.sh // deploy contract
+│       └── init_blockchain.sh // script for creating accounts and deploying contract on blockchain
 └── scripts
-|   └── install_darwin.sh // Installs dependencies and packages for MacOS
-|   └── install_debian.sh // Installs dependencies and packages for Debian based OS's
+│   └── install_darwin.sh // Installs dependencies and packages for MacOS
+│   └── install_debian.sh // Installs dependencies and packages for Debian based OS's
 └── frontend
-|   ├── node_modules // generated after npm install
-|   ├── public
-|   │   └── index.html // html skeleton for create react app
-|   ├── src
-|   │   ├── pages
-|   │   │   └── index.jsx // an one-pager jsx, include react component and Material-UI
-|   │   └── index.js // for react-dom to render the app
-|   ├── package-lock.json // generated after npm install
-|   └── package.json // for npm packages
+│   ├── node_modules // generated after npm install
+│   ├── public
+│   │   └── index.html // html skeleton for create react app
+│   ├── src
+│   │   ├── pages
+│   │   │   └── index.jsx // an one-pager jsx, include react component and Material-UI
+│   │   └── index.js // for react-dom to render the app
+│   ├── package-lock.json // generated after npm install
+│   └── package.json // for npm packages
 └── first_time_setup.sh // Run this to install all required software to make this project function
 ├── README.md // This document
 ├── reset_everything.sh // Run this to reset blockchain and wallet state, as well as remove installed packages
